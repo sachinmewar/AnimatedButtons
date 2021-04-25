@@ -1,0 +1,84 @@
+
+h1{
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bolder;
+   font-size: 44px;
+   color: rgba(0, 0, 0, 0.75);
+}
+
+p{
+   padding: 0px;
+   padding-left: 520px;
+   font-size: 24px;
+   color: grey;
+}
+
+table{
+   margin: 0px;
+   padding-top: 0px;
+   padding-left: 100px;
+}
+
+button:hover{
+   cursor: pointer;
+}
+
+button{
+   border-radius: 7px;
+   height: 45px;
+   width: 150px;
+   margin: 0px;
+   padding: 0px;
+   font-size: 16px;
+}
+
+tr{
+   padding-top: 50px;
+   margin-top: 50px;
+}
+
+td{
+   margin-right: 0px;
+   padding-left: 20px;
+   padding-right: 75px;
+   padding-top: 40px;
+}
+
+/* Button 1 */
+#button1{
+   background-color: rgb(47, 83, 150);
+}
+
+#button1:hover{
+   background-color: rgb(0,172,238);
+   cursor: pointer;
+}
+
+/* button 10 */
+#button10 {
+   background: linear-gradient(0deg, rgb(137, 79, 231) 10%, rgb(90, 9, 160) 100%);
+   border: none;
+ }
+
+ #button10:hover {
+   cursor: pointer;
+   box-shadow:  5px 5px 3px 0 rgba(255, 255, 255, 0.5),
+   -4px -4px 6px 0 rgba(116, 125, 136, 0.5), 
+   inset -4px -4px 4px 0 rgba(0, 0, 0, 0.2),
+   inset 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+ }
+
+ div.pageDetails{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 153px;
+    margin-top: 120px;
+ }
+
+ div.pageDetails p{
+    color : white;
+    font-size: 28px;
+    padding-top: 25px;
+ }
