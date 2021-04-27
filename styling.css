@@ -1,5 +1,5 @@
-
 h1{
+   position: relative;
    text-align: center;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: bolder;
@@ -9,7 +9,7 @@ h1{
 
 p{
    padding: 0px;
-   padding-left: 520px;
+   padding-left: 425px;
    font-size: 24px;
    color: grey;
 }
@@ -17,7 +17,7 @@ p{
 table{
    margin: 0px;
    padding-top: 0px;
-   padding-left: 100px;
+   padding-left: 80px;
 }
 
 button:hover{
@@ -25,6 +25,8 @@ button:hover{
 }
 
 button{
+   position: relative;
+   display: inline-block;
    border-radius: 7px;
    height: 45px;
    width: 150px;
@@ -41,7 +43,7 @@ tr{
 td{
    margin-right: 0px;
    padding-left: 20px;
-   padding-right: 75px;
+   padding-right: 50px;
    padding-top: 40px;
 }
 
@@ -52,33 +54,211 @@ td{
 
 #button1:hover{
    background-color: rgb(0,172,238);
-   cursor: pointer;
+   transition: ease 1.5s;
 }
 
-/* button 10 */
-#button10 {
+
+/* Button 2 */
+#button2{
+   background-color: rgba(248, 7, 7, 1);
+}
+
+#button2:hover{
+   background-color: rgba(248, 7, 7, 0.7);
+   transition: ease 800ms;
+}
+/* Button 2 Completed */
+
+
+/* Button 3 */
+#button3 {
    background: linear-gradient(0deg, rgb(137, 79, 231) 10%, rgb(90, 9, 160) 100%);
    border: none;
  }
 
- #button10:hover {
+#button3:hover {
    cursor: pointer;
-   box-shadow:  5px 5px 3px 0 rgba(255, 255, 255, 0.5),
-   -4px -4px 6px 0 rgba(116, 125, 136, 0.5), 
-   inset -4px -4px 4px 0 rgba(0, 0, 0, 0.2),
-   inset 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow:  5px 5px 3px 0 rgba(255, 255, 255, 0.5), 
+  -4px -4px 6px 0 rgba(116, 125, 136, 0.5), 
+  inset -4px -4px 4px 0 rgba(0, 0, 0, 0.2),
+  inset 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+/* button 3 Completed */
+
+
+/* Button 4 */
+
+#button4 {  
+   background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
+   color: #fff;
+   transition: all 0.5s ease;
+   overflow: hidden;
  }
 
- div.pageDetails{
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 153px;
-    margin-top: 120px;
+ #button4:after {
+   position: absolute;
+   content: " ";
+   color: chartreuse;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   transition: all 0.3s ease;
+   -webkit-transform: scale(.1);
+   transform: scale(.1);
  }
 
- div.pageDetails p{
-    color : white;
-    font-size: 28px;
-    padding-top: 25px;
+ #button4:hover {
+   color: chartreuse;
+   background-color: rgba(22,9,240,1);
+   background: transparent;
+}
+
+ #button4:hover:after {
+   background: rgb(0,3,255);
+   background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+   -webkit-transform: scale(1);
+   transform: scale(1);
+}
+/* Button 4 Completed */
+
+
+/* Button 5 */
+#button5 {
+   background: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+   line-height: 42px;
+}
+
+#button5 span {
+   position: relative;
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+#button5:before, #button5:after {
+   position: absolute;
+   content: "";
+   right: 0;
+   bottom: 0;
+   background: #c797eb;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.5),
+     inset 4px 4px 4px 0 rgba(116, 125, 136, .3);
+   transition: all 1s ease;
  }
+
+#button5:before{
+    height: 0%;
+    width: 2px;
+}
+
+#button5:after {
+   width: 0%;
+   height: 2px;
+}
+
+#button5:hover:before {
+   height: 100%;
+}
+
+#button5:hover:after {
+   width: 100%;
+}
+
+#button5:hover{
+   background: transparent;
+}
+
+#button5 span:hover{
+   color:rgb(47, 83, 150);
+}
+
+#button5 span:before, #button5 span:after {
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   background: #c797eb;
+   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+     inset -4px -4px 6px 0 rgba(255,255,255,.5),
+     inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+   transition: all 1s ease;
+   color: black;
+ }
+
+#button5 span:before {
+   width: 2px;
+   height: 0%;
+}
+
+#button5 span:after {
+   height: 2px;
+   width: 0%;
+   color: black;
+}
+
+#button5 span:hover:before {
+   height: 100%;
+}
+ 
+#button5 span:hover:after {
+   width: 100%;
+}
+
+/*button5 Completed */
+
+
+
+
+
+
+/* Button 6*/
+#button6{
+   background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+
+#button6:hover {
+   color: #f0094a;
+   background: transparent;
+}
+
+#button6:before, #button6:after{
+   content: '';
+   position: static;
+   height: 2px;
+   background: #f0094a;
+   transition:400ms ease all;
+  /* -moz-transition: 400ms ease all;*/
+ }
+
+#button6:after{
+   right:inherit;
+   top:inherit;
+   left:0;
+   bottom:0;
+}
+/* Button 6 Completed */
+
+
+
+
+
+
+div.pageDetails{
+   margin: 0px;
+   padding: 0px;
+   background-color: rgba(0, 0, 0, 0.5);
+   height: 119px;
+   margin-top: 80px;
+}
+
+div.pageDetails p{
+   color : white;
+   font-size: 28px;
+   padding-top: 25px;
+   padding-left: 520px;
+}
