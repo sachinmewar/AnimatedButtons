@@ -316,7 +316,6 @@ td {
     opacity: 0;
   }
 }
-
 /* Button 8 complete*/
 
 /* Button 9 */
@@ -349,7 +348,7 @@ td {
   animation: btn2 3s ease-in-out infinite;
 }
 
-@-webkit-keyframes btn2 {
+@keyframes btn2 {
   0% {
     -webkit-transform: scale(5) rotate(135deg);
     opacity: 0;
@@ -366,7 +365,7 @@ td {
     -webkit-transform: scale(30) rotate(135deg);
     opacity: 0.75;
   }
-  75% {
+  85% {
     -webkit-transform: scale(35) rotate(135deg);
     opacity: 0;
   }
@@ -377,6 +376,82 @@ td {
 }
 
 /* Button 9 complete*/
+
+/* Button 10 */
+
+#button10 {
+  background: -moz-linear-gradient(#833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  background: linear-gradient(#833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  overflow: hidden;
+}
+
+#button10:hover {
+  background: mediumspringgreen;
+}
+
+#button10::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: -180px;
+  height: 100%;
+  width: 30px;
+  left: 0;
+  background: #fff;
+  animation: btn3 2s ease-in-out infinite;
+}
+
+@keyframes btn3 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: scale(5) rotate(45deg);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: scale(60) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Button 10 Completed */
+
+/* Button 11 */
+
+#button11 {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
+}
+
+#button11:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#button11:hover {
+  color: #fff;
+}
+
+#button11:hover:after {
+  left: 0;
+  width: 100%;
+}
+/* Button 11 Completed */
 
 div.pageDetails {
   margin: 0px;
