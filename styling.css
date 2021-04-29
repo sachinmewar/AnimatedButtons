@@ -35,6 +35,11 @@ button {
   font-size: 16px;
 }
 
+button:active {
+  top: 2px;
+  left: 1px;
+}
+
 tr {
   padding-top: 50px;
   margin-top: 50px;
