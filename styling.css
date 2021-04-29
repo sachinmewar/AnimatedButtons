@@ -303,7 +303,7 @@ td {
     inset 4px 4px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
-@-webkit-keyframes btn1 {
+@keyframes btn1 {
   0% {
     -webkit-transform: scale(5) rotate(90deg);
     opacity: 0;
@@ -430,9 +430,10 @@ td {
 /* Button 11 */
 
 #button11 {
-  background: #b621fe;
+  background: #f01251;
   border: none;
   z-index: 1;
+  overflow: hidden;
 }
 
 #button11:after {
@@ -443,9 +444,9 @@ td {
   top: 0;
   right: 0;
   z-index: -1;
-  background-color: #663dff;
+  background-color: red;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #button11:hover {
@@ -457,6 +458,52 @@ td {
   width: 100%;
 }
 /* Button 11 Completed */
+
+/* Button 12 */
+
+#button12,
+#button13 {
+  background-color: blueviolet;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#button12::after,
+#button13::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: navy;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+#button12:hover,
+#button13:hover {
+  color: #fff;
+}
+
+#button12:hover:after {
+  right: 0;
+  width: 100%;
+}
+
+#button13::after {
+  height: 0;
+}
+/* Adding hover::after in button 13*/
+
+#button13:hover::after {
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Button 12 and 13 complete */
 
 div.pageDetails {
   margin: 0px;
