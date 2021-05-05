@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 h1 {
   position: relative;
   text-align: center;
@@ -7,6 +9,9 @@ h1 {
   color: rgba(0, 0, 0, 0.75);
 }
 
+body {
+  margin: 0;
+}
 p {
   padding: 0px;
   padding-left: 425px;
@@ -50,6 +55,26 @@ td {
   padding-left: 20px;
   padding-right: 50px;
   padding-top: 40px;
+}
+
+#digitalClockContainer {
+  margin-top: 0;
+  left: 1300px;
+  height: 45px;
+  width: 215px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #17d4fe;
+  letter-spacing: 2px;
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+#digitalClock {
+  margin-top: 8px;
+  padding-top: 6px;
 }
 
 /* Button 1 */
@@ -218,7 +243,6 @@ td {
 #button5 span:hover:after {
   width: 100%;
 }
-
 /*button5 Completed */
 
 /* Button 6*/
@@ -502,7 +526,6 @@ td {
   height: 100%;
   width: 100%;
 }
-
 /* Button 12 and 13 complete */
 
 div.pageDetails {
